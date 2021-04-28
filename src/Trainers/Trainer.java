@@ -1,4 +1,4 @@
-package Entities;
+package Trainers;
 
 import Monsters.Monster;
 

@@ -1,4 +1,10 @@
 package Monsters;
 
-public class AttackType {
+public enum AttackType {
+    WATER,
+    EARTH,
+    FIRE,
+    AIR,
+    LIFE,
+    DEATH
 }

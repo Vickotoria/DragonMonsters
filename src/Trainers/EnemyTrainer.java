@@ -1,6 +1,4 @@
-package Entities;
-
-import Monsters.Monster;
+package Trainers;
 
 /**
  * The enemy characters
