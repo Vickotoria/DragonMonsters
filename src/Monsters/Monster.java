@@ -7,6 +7,7 @@ import java.util.ArrayList;
  */
 public class Monster {
     private String name;
+    private Element elementType;
 
     private ArrayList<Attack> attacks;
 
@@ -15,8 +16,9 @@ public class Monster {
      * @param name the name of the monster
      * @param firstAttack the first attack of the monster
      */
-    public Monster(String name, Attack firstAttack) {
+    public Monster(String name, Element elementType, Attack firstAttack) {
         this.name = name;
+        this.elementType = elementType;
 
         attacks = new ArrayList<>(1);
         addAttack(firstAttack);
@@ -30,6 +32,10 @@ public class Monster {
 
     public String getName() {
         return name;
+    }
+
+    public Element getElementType() {
+        return elementType;
     }
 
     public ArrayList<Attack> getAttacks() {

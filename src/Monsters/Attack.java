@@ -6,16 +6,16 @@ package Monsters;
 public class Attack {
     private int damage;
 
-    private AttackType attType;
+    private Element elementType;
 
     /**
      * Creates an attack
      * @param damage the damage the attack does
      * @param type the type of attack
      */
-    public Attack(int damage, AttackType type) {
+    public Attack(int damage, Element type) {
         this.damage = damage;
-        attType = type;
+        elementType = type;
     }
 
     //getters
@@ -24,7 +24,7 @@ public class Attack {
         return damage;
     }
 
-    public AttackType getAttType() {
-        return attType;
+    public Element getAttType() {
+        return elementType;
     }
 }
