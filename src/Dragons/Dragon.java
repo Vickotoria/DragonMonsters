@@ -1,11 +1,11 @@
-package Monsters;
+package Dragons;
 
 import java.util.ArrayList;
 
 /**
  * Describes a monster.
  */
-public class Monster {
+public class Dragon {
     private String name;
     private Element elementType;
 
@@ -16,7 +16,7 @@ public class Monster {
      * @param name the name of the monster
      * @param firstAttack the first attack of the monster
      */
-    public Monster(String name, Element elementType, Attack firstAttack) {
+    public Dragon(String name, Element elementType, Attack firstAttack) {
         this.name = name;
         this.elementType = elementType;
 

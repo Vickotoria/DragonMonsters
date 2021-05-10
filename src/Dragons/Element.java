@@ -1,4 +1,4 @@
-package Monsters;
+package Dragons;
 
 public enum Element {
     WATER,

@@ -1,16 +1,16 @@
 package Trainers;
 
-import Dragons.Monster;
+import Dragons.Dragon;
 
 import java.util.ArrayList;
 
 public class Trainer {
-    //private final int maxNumMon = 5; //todo
+    //private final int maxNumDragons = 5; //todo
     private int initiative;
     private String name;
 
-    private Monster activeMonster;
-    private ArrayList<Monster> monsters;
+    private Dragon activeDragon;
+    private ArrayList<Dragon> dragons;
 
     /**
      * Creates a trainer
@@ -20,15 +20,15 @@ public class Trainer {
         this.initiative = initiative;
         this.name = name;
 
-        monsters = new ArrayList<>(1);
+        dragons = new ArrayList<>(1);
     }
 
     /**
      * Adds a monster to the trainer
      * @param mon the monster to add
      */
-    public void addMonster(Monster mon){
-        monsters.add(mon);
+    public void addMonster(Dragon mon){
+        dragons.add(mon);
     }
 
     /**
@@ -52,15 +52,15 @@ public class Trainer {
      * Get the active dragon of the trainer
      * @return the active dragon
      */
-    public Monster getActiveMonster(){
-        return this.activeMonster;
+    public Dragon getActiveDragon(){
+        return this.activeDragon;
     }
 
     /**
-     * The monsters the trainer has
-     * @return the monsters
+     * The dragons the trainer has
+     * @return the dragons
      */
-    public ArrayList<Monster> getMonsters() {
-        return this.monsters;
+    public ArrayList<Dragon> getDragons() {
+        return this.dragons;
     }
 }
