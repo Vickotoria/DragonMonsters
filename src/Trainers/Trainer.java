@@ -1,6 +1,6 @@
 package Trainers;
 
-import Monsters.Monster;
+import Dragons.Monster;
 
 import java.util.ArrayList;
 
@@ -9,6 +9,7 @@ public class Trainer {
     private int initiative;
     private String name;
 
+    private Monster activeMonster;
     private ArrayList<Monster> monsters;
 
     /**
@@ -30,6 +31,13 @@ public class Trainer {
         monsters.add(mon);
     }
 
+    /**
+     * Changes the active dragon of the trainer
+     */
+    public void changeActiveMonster(){
+        //todo
+    }
+
     //getters
 
     /**
@@ -37,7 +45,15 @@ public class Trainer {
      * @return the name of the trainer
      */
     public String getName() {
-        return name;
+        return this.name;
+    }
+
+    /**
+     * Get the active dragon of the trainer
+     * @return the active dragon
+     */
+    public Monster getActiveMonster(){
+        return this.activeMonster;
     }
 
     /**
@@ -45,6 +61,6 @@ public class Trainer {
      * @return the monsters
      */
     public ArrayList<Monster> getMonsters() {
-        return monsters;
+        return this.monsters;
     }
 }
