@@ -4,8 +4,9 @@ import Monsters.Monster;
 
 import java.util.ArrayList;
 
-public abstract class Trainer {
+public class Trainer {
     //private final int maxNumMon = 5; //todo
+    private int initiative;
     private String name;
 
     private ArrayList<Monster> monsters;
@@ -14,10 +15,11 @@ public abstract class Trainer {
      * Creates a trainer
      * @param name the name of the trainer
      */
-    protected Trainer(String name) {
+    public Trainer(String name, int initiative) {
+        this.initiative = initiative;
         this.name = name;
 
-        monsters = new ArrayList<>(2);
+        monsters = new ArrayList<>(1);
     }
 
     /**

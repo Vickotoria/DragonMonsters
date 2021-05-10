@@ -1,8 +1,6 @@
 package Misc;
 
-import Monsters.Monster;
-import Trainers.EnemyTrainer;
-import Trainers.Player;
+import Trainers.Trainer;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -12,8 +10,8 @@ public class GameEngine {
 
     private Scanner scanner;
 
-    private Player player;
-    private ArrayList<EnemyTrainer> enemyTrainers;
+    private Trainer player;
+    private ArrayList<Trainer> enemyTrainers;
 
     public GameEngine(){
         setupGame();
@@ -26,7 +24,7 @@ public class GameEngine {
         //monsters
 
         //player
-        player = new Player(askPlayerName(), null, null); //todo fix
+        player = new Trainer(askPlayerName(), 0); //todo fix
         System.out.println(player.getName()); //todo remove
 
         //enemies
