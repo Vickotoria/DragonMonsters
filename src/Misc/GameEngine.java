@@ -9,11 +9,13 @@ public class GameEngine {
     //private final int maxNumMon = 5;
 
     private Interaction interaction;
+    private XmlLoader xmlLoader;
 
     private Trainer player;
     private ArrayList<Trainer> enemyTrainers;
 
     public GameEngine(){
         interaction = Interaction.getInstance();
+        xmlLoader = XmlLoader.getInstance();
     }
 }
