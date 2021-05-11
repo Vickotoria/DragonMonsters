@@ -17,5 +17,11 @@ public class GameEngine {
     public GameEngine(){
         interaction = Interaction.getInstance();
         xmlLoader = XmlLoader.getInstance();
+
+        player = new Trainer(interaction.askPlayerName(), 5);
+    }
+
+    public void play(){
+        //
     }
 }
