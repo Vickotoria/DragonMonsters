@@ -8,36 +8,12 @@ import java.util.Scanner;
 public class GameEngine {
     //private final int maxNumMon = 5;
 
-    private Scanner scanner;
+    private Interaction interaction;
 
     private Trainer player;
     private ArrayList<Trainer> enemyTrainers;
 
     public GameEngine(){
-        setupGame();
-    }
-
-    private void setupGame(){
-        //basic setup
-        scanner = new Scanner(System.in);
-
-        //monsters
-
-        //player
-        player = new Trainer(askPlayerName(), 0); //todo fix
-        System.out.println(player.getName()); //todo remove
-
-        //enemies
-        enemyTrainers = new ArrayList<>(1);
-        loadEnemies();
-    }
-
-    private String askPlayerName(){
-        System.out.println("What is your name?");
-        return scanner.nextLine();
-    }
-
-    private void loadEnemies() {
-        //
+        interaction = Interaction.getInstance();
     }
 }
